@@ -14,7 +14,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        //객체 생성
+        //객체 ?�성
         final EditText edittext = (EditText) findViewById(R.id.editText);
         final TextView textView2 = (TextView) findViewById(R.id.textView2);
         Button send_button = (Button) findViewById(R.id.send_button);
@@ -25,7 +25,7 @@ public class MainActivity extends AppCompatActivity {
         final findNumber findnumber = new findNumber();
 
 
-        //send 버튼 눌렀을 시 textView에 숫자 표시
+        //send 버튼 ?��?????textView???�자 ?�시
         send_button.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View v) {
@@ -33,7 +33,7 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        //Bigger 버튼 눌렀을 시 textView에 숫자 표시
+        //Bigger 버튼 ?��?????textView???�자 ?�시
         Bigger_button.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View v) {
@@ -41,7 +41,7 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        //Smaller 버튼 눌렀을 시 textView에 숫자 표시
+        //Smaller 버튼 ?��?????textView???�자 ?�시
         Smaller_button.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View v) {
@@ -52,7 +52,7 @@ public class MainActivity extends AppCompatActivity {
         Bingo_button.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View v) {
-                textView2.setText("Correct numbers in " + findnumber.pressBingo()+ " time(s)!");
+                textView2.setText("You got the correct number in " + findnumber.pressBingo()+ " time(s)!");
             }
         });
 
